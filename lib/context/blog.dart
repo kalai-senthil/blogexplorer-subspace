@@ -59,7 +59,7 @@ class BlogContext with ChangeNotifier {
 
   void listenForFavs() async {
     if (appBox != null) {
-      favs = Set.from(jsonDecode(appBox?.get("favs", defaultValue: [])));
+      favs = Set.from(jsonDecode(appBox?.get("favs", defaultValue: '[]')));
       themeMode = appBox?.get("theme", defaultValue: ThemeMode.light);
       appBox?.watch(key: "favs").listen((event) {
         favs = Set.from(jsonDecode(event.value));

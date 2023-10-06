@@ -33,3 +33,11 @@ A application used to view and manage blogs.
 - hive: ^2.2.3
 - http: ^1.1.0
 - provider: ^6.0.5
+
+## How to Run
+
+- Install Flutter
+- Add `flutter` to Environment Variable
+- Open Project
+- cd `<Project_Directory>`
+- flutter run
